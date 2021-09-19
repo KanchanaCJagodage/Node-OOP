@@ -44,10 +44,12 @@ class Teacher extends per.Person{
        return `${this.name} is born in ${this.getDOB()}.
        <br> ${gen} lives in ${this.city}.
        <br> ${gen} is ${this.calculateAge()} years old.
-       <br> ${gen} is a teacher. ${gen} works at ${this.school} and the ID is ${this.getTeacherId()}.
+       <br> ${gen} is a teacher who works at ${this.school}.
+       <br>${gen} is a ${this.subject} teacher. 
+       <br>the ID of ${this.name} is ${this.getTeacherId()}.
        <br>${gen} has a monthly salary of ${this.salary}.
        <br> ${gen} has ${this.serviceYears()} of service years.
-       <br>If ${gen} retire now, ${gen} has a retire fund of ${this.retireFund()}.`;
+       <br>If ${gen} retires now, ${gen} has a retire fund of ${this.retireFund()}.`;
    };
 
 }
