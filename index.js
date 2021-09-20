@@ -7,9 +7,7 @@ let person = persons.Person;
 let student = students.Student;
 
 
-const p1 = new person("Kamal Jayawardane","Galle","Richmand College");
-p1.setDOB(1980);
-p1.setGender("male");
+
 
 
 const s1 = new student("Samila Jagodage","Badulla","Vihara Maha Devi","Science");
@@ -27,10 +25,7 @@ t1.setTeacherId("t01");
 
 
 http.createServer(function(req,res){
-    res.writeHead(200,{'Content-Type':'text/html'});
-    res.write("<h1>Person</h1>")
-    res.write(p1.bio());
-    res.write("<br>");
+    res.writeHead(200,{'Content-Type':'text/html'})
     res.write("<h1>Student</h1>");
     res.write(s1.bio());
     res.write("<br>");

@@ -30,20 +30,10 @@ class Person{
         return new Date().getFullYear()-this.getDOB();
    } ;
 
- bio(){  
-        let gen = "";
-        if(this.getGender()=="female"){
-            gen ="She";
-        
-        }
-        else{
-            gen =  "He";
-            
-        }
-       return `${this.name} is born in ${this.getDOB()}.
-       <br> ${gen} lives in ${this.city}.
-       <br> ${gen} is ${this.calculateAge()} years old. `;
-   };
+//Abstract Method 
+ bio(){
+    throw new Error("Abstract Method");
+  };
    
 };
 
