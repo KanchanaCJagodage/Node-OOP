@@ -10,7 +10,7 @@ class Person{
         
     };
    
-    
+ //Encapsulation   
  getGender(){
         return this.gender;
     }
