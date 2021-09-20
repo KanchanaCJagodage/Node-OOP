@@ -6,7 +6,7 @@ class Teacher extends per.Person{
         this.subject=subject;
         this.enrollYear=enrollYear;
         this.basesalary=basesalary;
-//Abstraction
+
         let bonus = 1000;
 
         let fullSalaryPermonth = function(){
@@ -29,7 +29,7 @@ class Teacher extends per.Person{
         return this.serviceYears()*50000;
 
     }
-// Pollymorphism
+
     bio(){  
         let gen = "";
         if(this.getGender()=="female"){

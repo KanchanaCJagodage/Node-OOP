@@ -28,7 +28,7 @@ class Student extends per.Person{
             return `is a primary student`;
         }
     }
-// Pollymorphism
+
     bio(){  
         let gen = "";
         if(this.getGender()=="female"){
